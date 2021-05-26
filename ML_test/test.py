@@ -23,3 +23,4 @@ def recur(m):
 L = [1, 20, 19, 18, 26, 5, 7, 8, 2, 3]
 print("排序前：", L)
 print("排序后：", recur(L))
+print("稳定不")
