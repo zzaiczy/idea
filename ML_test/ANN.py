@@ -216,7 +216,7 @@ class Ann:
                 print(loss)
             assert self.back_forward(l_y), "向后失败"
             assert self.w_update(alfa), "更新失败"
-            if abs(last_loss - loss) < 10 ** -9:
+            if abs(last_loss - loss) < 10 ** -6:
                 print("训练完成！")
                 break
             last_loss = loss

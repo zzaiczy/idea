@@ -9,7 +9,7 @@ class Solution:
         # 旋转下去再提上来
         for i in range(n):
             for j in range(n):
-                if
+                pass
         for i in range(1, delta+1):
             for j in range(1, delta+1):
                 first_i, first_j = i+delta-1, j+delta-1
