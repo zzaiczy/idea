@@ -6,9 +6,9 @@ def generate_tfrecord(tfrecord_filename):
                  [1], [2, 2], [3, 3, 3], [4, 4, 4, 4]]
     labels = [1, 2, 3, 4, 5, 1, 2, 3, 4]
 
-    with tf.python_io.TFRecordWriter(tfrecord_filename) as f:
+    with tf.io.TFRecordWriter(tfrecord_filename) as f:
         for feature, label in zip(sequences, labels):
-            frame_feature = list(map(lambda id: tf.train.Feature(int64_list=tf.train.Int64List(value=[id])), feature))
+            frame_feature = list(map(lambda i: tf.train.Feature(int64_list=tf.train.Int64List(value=[i])), feature))
 
             example = tf.train.SequenceExample(
                 context=tf.train.Features(feature={
