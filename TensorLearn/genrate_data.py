@@ -5,6 +5,7 @@ def generate_tfrecord(tfrecord_filename):
     sequences = [[1], [2, 2], [3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5, 5],
                  [1], [2, 2], [3, 3, 3], [4, 4, 4, 4]]
     labels = [1, 2, 3, 4, 5, 1, 2, 3, 4]
+    others = labels[:]
 
     with tf.io.TFRecordWriter(tfrecord_filename) as f:
         for feature, label in zip(sequences, labels):
