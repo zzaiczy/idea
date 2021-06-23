@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "feature1",
+    "len": -1
+  },
+  {
+    "id": 2,
+    "name": "feature2",
+    "len": 0
+  }
+]
